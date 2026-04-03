@@ -18,8 +18,14 @@ st.set_page_config(
 )
 
 # Title
-st.title("🍽️ Bangalore Restaurant Analysis")
+st.title("Bangalore Restaurant Analysis")
 st.markdown("*An exploratory analysis of 41,000+ restaurants in Bangalore using Zomato data*")
+
+st.markdown("""
+> 💡 **How to use:** Use the filters on the left sidebar to explore 
+> restaurants by location, cuisine, price and rating. 
+> Charts update automatically!
+""")
 
 #load cache
 @st.cache_data
@@ -251,3 +257,13 @@ the complete restaurant ecosystem. Additional data needed:
 - Time-based ordering patterns
 - Customer demographic data
 """)
+
+
+st.markdown("---")
+st.markdown("""
+<div style='text-align: center; color: grey;'>
+Built by LaKshmeenarasimhan U | Data Source: Zomato Bangalore | 
+<a href='https://github.com/yourusername/project-1-eda-dashboard'>
+GitHub Repository</a>
+</div>
+""", unsafe_allow_html=True)
